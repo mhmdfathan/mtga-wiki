@@ -1,20 +1,44 @@
 /* src/components/Home.css */
+
 .card-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .card-item {
-    margin-bottom: 10px;
-  }
-  
-  .card-link {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .card-link:hover {
-    color: #61dafb;
-  }
-  
+  list-style: none;
+  padding: 0;
+}
+
+.card-item {
+  margin-bottom: 10px;
+}
+
+.card-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.card-link:hover {
+  color: #61dafb;
+}
+
+/* New styles for the card container */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Add some styling for the container on hover if you like */
+.card-container:hover {
+  transform: scale(1.05);
+}
+
+/* Styles for the card image */
+.card-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+}

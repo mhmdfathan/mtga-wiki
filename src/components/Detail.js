@@ -29,10 +29,11 @@ const Detail = () => {
           <img src={card.imageUrl} alt={card.name} className="detail-image" />
           <p>Mana Cost: {card.manaCost}</p>
           <p>CMC: {card.cmc}</p>
-          <p>Colors: {card.colors.join(', ')}</p>
-          <p>Color Identity: {card.colorIdentity.join(', ')}</p>
+          {/* Check if colors and colorIdentity are defined before using join */}
+          <p>Colors: {card.colors?.join(', ')}</p>
+          <p>Color Identity: {card.colorIdentity?.join(', ')}</p>
           <p>Type: {card.type}</p>
-          <p>Subtypes: {card.subtypes.join(', ')}</p>
+          <p>Subtypes: {card.subtypes?.join(', ')}</p>
           <p>Rarity: {card.rarity}</p>
           <p>Set: {card.set}</p>
           <p>Set Name: {card.setName}</p>
