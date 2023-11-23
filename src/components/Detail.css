@@ -1,0 +1,18 @@
+/* src/components/Detail.css */
+.detail-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .detail-title {
+    font-size: 1.5em;
+  }
+  
+  .detail-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  /* Add more styles as needed for the additional information */
+  
